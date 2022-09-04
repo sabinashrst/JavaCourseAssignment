@@ -1,0 +1,26 @@
+## OS X
+.DS_STORE
+
+##Eclipse IDE
+bin/
+temp/
+.metadata
+*.tmp
+.settings/
+local.properties
+
+## Intellij IDE
+.idea
+out/
+
+##General files
+*.class
+*.jar
+*.war
+*.log
+/target/
+hs_err_pid*
+.project
+.classpath
+.impl
+
