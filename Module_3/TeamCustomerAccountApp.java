@@ -59,7 +59,7 @@ public class TeamCustomerAccountApp {
 		System.out.println("--Customer Details--");
 		System.out.println(customer);
 		System.out.println();
-		System.out.println("Balance as of " + account.getDate() + " is " + account.getBalance());
+		System.out.printf("Balance as of " + account.getDate() + " is " + "$%6.2f", account.getBalance());
 		System.out.println();
 		System.out.println("End of line...");
 
