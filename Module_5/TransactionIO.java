@@ -1,3 +1,6 @@
+//Assignment: 5.2
+//Author: Sabina Shrestha
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,6 +13,9 @@ public class TransactionIO {
 	public static final String FILE_NAME = "expenses.txt";
 	private static File file = new File(FILE_NAME);
 
+	
+	//static method named bulkInsert with an ArrayList<Transaction> argument
+	//named transactions and a return type of void.
 	public static void bulkInsert(ArrayList<Transaction> transactions) throws IOException {
 
 		PrintWriter output = null;
@@ -30,21 +36,24 @@ public class TransactionIO {
 		output.close();
 
 	}
+
 	
+	//static method named findAll with a return type of ArrayList<Transaction>
 	public static ArrayList<Transaction> findAll() throws IOException {
 
 		ArrayList<Transaction> transactions = new ArrayList<Transaction>();
-		Transaction tran = new Transaction();
+		Transaction tran;
 		Scanner input = new Scanner(file);
-		
+
 		while (input.hasNext()) {
+			tran = new Transaction();
 			tran.setDate(input.next());
 			tran.setDescription(input.next());
 			tran.setAmount(input.nextDouble());
-			transactions.add(tran);			
+			transactions.add(tran);
 		}
-		
-		return transactions ;
+
+		return transactions;
 	}
 
 }
