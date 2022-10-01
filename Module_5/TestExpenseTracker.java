@@ -30,7 +30,6 @@ public class TestExpenseTracker {
 		//If the user selects menu item one, display all the transactions in the expenses.txt file
 		if (input == 1) {
 			try {
-
 				System.out.println("MONTHLY EXPENSES");
 
 				ArrayList<Transaction> transactions = TransactionIO.findAll();
@@ -53,7 +52,6 @@ public class TestExpenseTracker {
 				transactions.add(transaction);
 
 				c = ValidatorIO.getString(sc, "\nAdd another transaction? (y/n): ");
-
 			}
 
 			try {
@@ -78,8 +76,7 @@ public class TestExpenseTracker {
 			}
 		}
 		
-		Scanner scan = new Scanner(System.in);
-	
+		Scanner scan = new Scanner(System.in);	
 		System.out.print("\nContinue? (y/n): ");
 		result = scan.nextLine();
 		System.out.println();
