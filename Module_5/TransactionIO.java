@@ -30,11 +30,8 @@ public class TransactionIO {
 			output.print(tran.getDate() + " ");
 			output.print(tran.getDescription() + " ");
 			output.println(tran.getAmount());
-
 		}
-
 		output.close();
-
 	}
 
 	
@@ -52,7 +49,6 @@ public class TransactionIO {
 			tran.setAmount(input.nextDouble());
 			transactions.add(tran);
 		}
-
 		return transactions;
 	}
 
