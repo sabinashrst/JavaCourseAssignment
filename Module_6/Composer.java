@@ -50,6 +50,5 @@ public class Composer {
 	@Override
 	public String toString() {
 		return "Id: " + getId() + "\n" + "Name: " + getName() + "\n" + "Genre: " + getGenre();
-
 	}
 }

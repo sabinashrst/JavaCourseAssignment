@@ -39,7 +39,6 @@ public class MemComposerDao implements GenericDao<Composer, Integer> {
 		composers.add(comp3);
 		composers.add(comp4);
 		composers.add(comp5);
-
 	}
 
 	// findAll method that returns a list of composer objects.
@@ -65,6 +64,5 @@ public class MemComposerDao implements GenericDao<Composer, Integer> {
 	@Override
 	public void insert(Composer composer) {
 		composers.add(composer);
-
 	}
 }

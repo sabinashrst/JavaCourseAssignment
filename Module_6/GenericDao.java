@@ -4,11 +4,7 @@
 import java.util.List;
 
 public interface GenericDao<E, K> {
-
 	List<E> findAll();
-
 	E findby(K Key);
-
 	void insert(E entity);
-
 }

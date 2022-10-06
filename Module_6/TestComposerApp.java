@@ -10,7 +10,6 @@ public class TestComposerApp {
 		MemComposerDao memComposerDao = new MemComposerDao();
 		int input = userInput();
 		while (input != 0) {
-
 			if (input == 1) {
 				List<Composer> composers = memComposerDao.findAll();
 				for (Composer composer : composers) {
@@ -47,10 +46,8 @@ public class TestComposerApp {
 				memComposerDao.insert(composer);
 				System.out.println();
 			}
-
 			input = userInput();
 		}
-
 	}
 
 	public static int userInput() {
@@ -68,5 +65,4 @@ public class TestComposerApp {
 		int input = customerInput.nextInt();
 		return input;
 	}
-
 }
