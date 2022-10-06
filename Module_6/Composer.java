@@ -1,8 +1,15 @@
+//Assignment: 6.2
+//Author: Sabina Shrestha
 
 public class Composer {
 
+	//integer data field named id
 	private int id;
+	
+	// string data field named name
 	private String name = "";
+	
+	// string data field named genre.
 	private String genre = "";
 
 	public Composer() {
@@ -42,7 +49,7 @@ public class Composer {
 
 	@Override
 	public String toString() {
-		return "Id: " + getId() + ", Name= " + getName() + ", Genre=" + getGenre();
+		return "Id: " + getId() + "\n" + "Name: " + getName() + "\n" + "Genre: " + getGenre();
 
 	}
 }
