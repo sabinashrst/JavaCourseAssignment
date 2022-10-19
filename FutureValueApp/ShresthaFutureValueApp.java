@@ -55,7 +55,6 @@ public class ShresthaFutureValueApp extends Application{
         gridPane.add(lblYears, 0, 3);
         yearsComboBox.setMaxWidth(Double.MAX_VALUE);
         gridPane.add(yearsComboBox, 1,3); 
-        
 
         gridPane.add(btnCalculate, 0, 4); 
         gridPane.add(btnClear, 1, 4);
@@ -80,7 +79,6 @@ public class ShresthaFutureValueApp extends Application{
       primaryStage.setScene(scene); 
          
       //Displaying the contents of the stage 
-      primaryStage.show(); 
-       
+      primaryStage.show();       
     } 
 }
