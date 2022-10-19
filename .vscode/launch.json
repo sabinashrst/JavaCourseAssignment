@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShresthaFutureValueApp",
+            "request": "launch",
+            "vmArgs": "--module-path /Users/sakilshrst/downloads/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml", 
+            "mainClass": "FutureValueApp.ShresthaFutureValueApp",
+            "projectName": "cis-505-1_c34390b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShresthaHelloWorld",
+            "request": "launch",
+            "mainClass": "Module_1.HelloWorldApp.ShresthaHelloWorld",
+            "projectName": "cis-505-1_c34390b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch TeamCustomerAccountApp",
+            "request": "launch",
+            "mainClass": "TeamCustomerAccountApp",
+            "projectName": "cis-505-1_c34390b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestBowlingShopApp",
+            "request": "launch",
+            "mainClass": "TestBowlingShopApp",
+            "projectName": "cis-505-1_c34390b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestComposerApp",
+            "request": "launch",
+            "mainClass": "TestComposerApp",
+            "projectName": "cis-505-1_c34390b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestExpenseTracker",
+            "request": "launch",
+            "mainClass": "TestExpenseTracker",
+            "projectName": "cis-505-1_c34390b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestFanApp",
+            "request": "launch",
+            "mainClass": "TestFanApp",
+            "projectName": "cis-505-1_c34390b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSportsTeamApp",
+            "request": "launch",
+            "mainClass": "TestSportsTeamApp",
+            "projectName": "cis-505-1_c34390b0"
+        }
+    ]
+}
