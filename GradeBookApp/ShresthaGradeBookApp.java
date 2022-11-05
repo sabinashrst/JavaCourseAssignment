@@ -40,14 +40,14 @@ public class ShresthaGradeBookApp extends Application {
     public void start(Stage primaryStage) throws Exception {
         
          //Setting title to the Stage 
-         primaryStage.setTitle("Grade Book App");
+        primaryStage.setTitle("Grade Book App");
       
          // add a new GridPane object and set its alignment to Pos.CENTER, set its padding to 11.5, 12.5, 13.5, and 14.5. Next, set the panes Hgap to 5.5 and its Vgap to 5.5
-         GridPane gridPane = new GridPane();  
-         gridPane.setAlignment(Pos.CENTER);   
-         gridPane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5)); 
-         gridPane.setVgap(5.5); 
-         gridPane.setHgap(5.5); 
+        GridPane gridPane = new GridPane();  
+        gridPane.setAlignment(Pos.CENTER);   
+        gridPane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5)); 
+        gridPane.setVgap(5.5); 
+        gridPane.setHgap(5.5); 
 
            //Add the controls to the GridPane.
         gridPane.add(lblFirstName, 0, 0); 
@@ -70,11 +70,11 @@ public class ShresthaGradeBookApp extends Application {
 
         Scene scene = new Scene(gridPane);  
          
-      //Adding scene to the stage 
-      primaryStage.setScene(scene); 
+        //Adding scene to the stage 
+        primaryStage.setScene(scene); 
          
-      //Displaying the contents of the stage 
-      primaryStage.show();      
+        //Displaying the contents of the stage 
+        primaryStage.show();      
     }
     
 }
