@@ -1,6 +1,8 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/Users/sakilshrst/Downloads/javafx-sdk-19/**/*.jar"
+        "/Users/sakilshrst/Downloads/javafx-sdk-19/**/*.jar",
+        "/Users/sakilshrst/Downloads/jar_files/opencsv-4.1.jar",
+        "/Users/sakilshrst/Downloads/commons-lang3-3.12.0/commons-lang3-3.12.0.jar"
     ]
 }
