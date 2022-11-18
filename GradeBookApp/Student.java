@@ -56,6 +56,6 @@ public class Student {
     @Override
     public String toString() {
         return "FirstName=" + firstName + ", LastName=" + lastName + ", CourseName=" + courseName + ", Grade="
-                + grade;
+                + grade + '\n';
     }
 }

@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import com.opencsv.CSVWriter;
 
 import javafx.application.Application;
@@ -120,9 +121,12 @@ public class ShresthaGradeBookApp extends Application {
         students.add(new String[] { firstName, lastName, course, grade });
 
         // This class allows us to write the data to a CSV file.
-        CSVWriter writer = new CSVWriter(new FileWriter("output.csv"));
+        CSVWriter writer = new CSVWriter(new FileWriter("output.csv", true));
         String[] header = "firstName,lastName,course,grade".split(",");
-        writer.writeNext(header);
+        if (!headerExists()) {
+            writer.writeNext(header);
+        }
+
         writer.writeAll(students);
         writer.close();
     }
@@ -131,10 +135,13 @@ public class ShresthaGradeBookApp extends Application {
         FileReader filereader = new FileReader("output.csv");
 
         // create csvReader object and skip first Line
-        CSVReader csvReader = new CSVReader(filereader);
+        CSVReader csvReader = new CSVReaderBuilder(filereader).withSkipLines(1)
+                .build();
+        ;
         List<String[]> records = csvReader.readAll();
 
         Iterator<String[]> iterator = records.iterator();
+        List<Student> students = new ArrayList<>();
 
         while (iterator.hasNext()) {
             String[] record = iterator.next();
@@ -143,12 +150,32 @@ public class ShresthaGradeBookApp extends Application {
             student.setLastName(record[1]);
             student.setCourseName(record[2]);
             student.setGrade(record[3]);
-            txtResults.setText(student.toString());
+            students.add(student);
 
         }
+
+        txtResults.setText(students.toString());
         // close readers
         csvReader.close();
         filereader.close();
+    }
+
+    //method to check if header exits
+    private boolean headerExists() throws Exception {
+        boolean result = false;
+        FileReader filereader = new FileReader("output.csv");
+        CSVReader csvReader = new CSVReader(filereader);
+        List<String[]> records = csvReader.readAll();
+
+        Iterator<String[]> iterator = records.iterator();
+        while (iterator.hasNext()) {
+            String[] record = iterator.next();
+            if (record[0].equals("firstName")) {
+                result = true;
+                break;
+            }
+        }
+        return result;
     }
 
     // This method set all the text values and areas to empty string
