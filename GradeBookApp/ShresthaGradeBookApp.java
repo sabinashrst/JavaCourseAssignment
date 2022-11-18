@@ -29,8 +29,8 @@ public class ShresthaGradeBookApp extends Application {
 
     private Label lblFirstName = new Label("First Name:");
     private Label lblLastName = new Label("Last Name:");
-    private Label lblCourse = new Label("Course");
-    private Label lblGrade = new Label("Years:");
+    private Label lblCourse = new Label("Course:");
+    private Label lblGrade = new Label("Grade:");
 
     private ComboBox<String> cbGrade = new ComboBox<String>();
     private TextField txtFirstName = new TextField();
